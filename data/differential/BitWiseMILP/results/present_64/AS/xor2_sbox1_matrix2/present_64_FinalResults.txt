@@ -1,0 +1,13 @@
+ ***************** FINAL RESULTS ***************** 
+
+Results Of 1 Rounds : 
+	Obj : 1
+	clockTime : 0.054341
+	timeTime : 0
+
+Results Of 2 Rounds : 
+	Obj : 2
+	clockTime : 0.184696
+	timeTime : 0
+
+ ***************** FINAL RESULTS ***************** 

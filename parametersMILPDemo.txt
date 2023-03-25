@@ -1,0 +1,7 @@
+7
+../benchmarks/BlockCipher/PRESENT.cl
+b
+AS
+1
+allRounds
+5

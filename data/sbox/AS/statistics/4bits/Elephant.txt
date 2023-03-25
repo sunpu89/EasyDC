@@ -1,0 +1,30 @@
+greedy_sun : 
+#constrains : 26
+time : 0s
+
+
+sub_milp : 
+#constrains : 23
+time : 1s
+
+
+convex_hull : 
+#constrains : 19
+time : 149s
+
+
+logic_cond : 
+#constrains : 38
+time : 0s
+
+
+distorted_balls : 
+#constrains : 19
+time : 3s
+
+
+comb233 : 
+#constrains : 19
+time : 3s
+
+

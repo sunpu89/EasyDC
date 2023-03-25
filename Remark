@@ -1,0 +1,35 @@
+Functions:
+1. EasyBC language parser       check
+2. S-box modeling               check
+    1) construct DDT
+    2) generate inequalities for modeling possible differential propagations
+    3) calculate the weighted of extended bits for DC mode
+    4) 8 methods for reducing inequalities
+3. Branch number calculation
+4. Word-wise MILP modeling
+5. Bit-wise MILP modeling
+    1) AS
+    2) DC
+6. All IL constraints for Word-wise and Bit-wise MILP
+
+
+EasyDC: A Domain-Specific Language for Security Analysis of
+Block Ciphers against Differential Cryptanalysis
+
+This repository is for parsing the input EasyDC programs of block ciphers and then
+performing the security analysis of block ciphers against differential cryptanalysis
+by solving MILP instances generated from the preprocessed programs of inputs.
+It also support the modelings of S-boxes separately, which generate IL constraints
+of DDTs of the given S-boxes.
+
+Preparatory environment:
+1. gurobi
+2. z3
+3. flex
+4. bison
+5. jsoncpp
+
+Usage:
+1. Modeling possible differential propagations in DDTs of S-boxes
+
+2. Security analysis of block ciphers against differential cryptanalysis
