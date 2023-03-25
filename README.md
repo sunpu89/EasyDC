@@ -1,6 +1,6 @@
 # EasyDC: A Domain-Specific Language for Security Analysis of Block Ciphers against Differential Cryptanalysis
 
-This repository is for parsing the input **[EasyDC](https://github.com/easydcpro/easydc)** programs of block ciphers and then performing the security analysis of block ciphers against differential cryptanalysis by solving MILP instances generated from the preprocessed programs of inputs.
+This repository is for parsing the input **[EasyDC](https://github.com/GOODMORNING616/EasyDC)** programs of block ciphers and then performing the security analysis of block ciphers against differential cryptanalysis by solving MILP instances generated from the preprocessed programs of inputs.
 It also support the modelings of S-boxes separately, which generate IL constraints of DDTs of the given S-boxes.
 
 ## Preparatory Environment:
@@ -16,26 +16,26 @@ used for computing branch number of various operators, checking if a given S-box
 
 ## Project Structure
 - [root](https://github.com/easydcpro/easydc)
-  - [benchmarks](https://github.com/easydcpro/easydc/tree/main/benchmarks)
-    - [BlockCipher](https://github.com/easydcpro/easydc/tree/main/benchmarks/BlockCipher)
-    - [NIST](https://github.com/easydcpro/easydc/tree/main/benchmarks/NIST)
-    - [WordWise](https://github.com/easydcpro/easydc/tree/main/benchmarks/WordWise)   
-  - [data](https://github.com/easydcpro/easydc/tree/main/data)
-    - [differential](https://github.com/easydcpro/easydc/tree/main/data/differential)
-      - [BitWiseMILP](https://github.com/easydcpro/easydc/tree/main/data/differential/BitWiseMILP)
-        - [dc](https://github.com/easydcpro/easydc/tree/main/data/differential/BitWiseMILP/dc) : the saved differential characteristics of bit-wise MILP instances and extended bit-wise MILP instances.
-        - [models](https://github.com/easydcpro/easydc/tree/main/data/differential/BitWiseMILP/models) : the constructed bit-wise and extended bit-wise MILP instances.
-        - [results](https://github.com/easydcpro/easydc/tree/main/data/differential/BitWiseMILP) : the solving results of bit-wise and extended bit-wise MILP instances.
-      - [WordWiseMILP](https://github.com/easydcpro/easydc/tree/main/data/differential/WordWiseMILP) 
-        - [models](https://github.com/easydcpro/easydc/tree/main/data/differential/WordWiseMILP/models) : the constructed word-wise MILP instances.
-        - [results](https://github.com/easydcpro/easydc/tree/main/data/differential/WordWiseMILP) : the solving results of word-wise MILP instances.
-    - [sbox](https://github.com/easydcpro/easydc/tree/main/data/sbox)
-      - [ARX](https://github.com/easydcpro/easydc/tree/main/data/sbox/ARX) : the modelings and results of arithmetic addition.
-      - [AS](https://github.com/easydcpro/easydc/tree/main/data/sbox/AS) : the modelings and results of look-up table S-boxes without the probabilities of possible differential propagations in DDTs.
-      - [DC](https://github.com/easydcpro/easydc/tree/main/data/sbox/DC) : the modelings and results of look-up table S-boxes with the probabilities of possible differential propagations in DDTs.
-  - [include](https://github.com/easydcpro/easydc/tree/main/include) : head files.
-  - [lib](https://github.com/easydcpro/easydc/tree/main/lib) : source files.
-  - [main.cpp](https://github.com/easydcpro/easydc/blob/main/main.cpp)
+  - [benchmarks](https://github.com/GOODMORNING616/EasyDC/tree/main/benchmarks)
+    - [BlockCipher](https://github.com/GOODMORNING616/EasyDC/tree/main/benchmarks/BlockCipher)
+    - [NIST](https://github.com/GOODMORNING616/EasyDC/tree/main/benchmarks/NIST)
+    - [WordWise](https://github.com/GOODMORNING616/EasyDC/tree/main/benchmarks/WordWise)   
+  - [data](https://github.com/GOODMORNING616/EasyDC/tree/main/data)
+    - [differential](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential)
+      - [BitWiseMILP](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/BitWiseMILP)
+        - [dc](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/BitWiseMILP/dc) : the saved differential characteristics of bit-wise MILP instances and extended bit-wise MILP instances.
+        - [models](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/BitWiseMILP/models) : the constructed bit-wise and extended bit-wise MILP instances.
+        - [results](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/BitWiseMILP) : the solving results of bit-wise and extended bit-wise MILP instances.
+      - [WordWiseMILP](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/WordWiseMILP) 
+        - [models](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/WordWiseMILP/models) : the constructed word-wise MILP instances.
+        - [results](https://github.com/GOODMORNING616/EasyDC/tree/main/data/differential/WordWiseMILP) : the solving results of word-wise MILP instances.
+    - [sbox](https://github.com/GOODMORNING616/EasyDC/tree/main/data/sbox)
+      - [ARX](https://github.com/GOODMORNING616/EasyDC/tree/main/data/sbox/ARX) : the modelings and results of arithmetic addition.
+      - [AS](https://github.com/GOODMORNING616/EasyDC/tree/main/data/sbox/AS) : the modelings and results of look-up table S-boxes without the probabilities of possible differential propagations in DDTs.
+      - [DC](https://github.com/GOODMORNING616/EasyDC/tree/main/data/sbox/DC) : the modelings and results of look-up table S-boxes with the probabilities of possible differential propagations in DDTs.
+  - [include](https://github.com/GOODMORNING616/EasyDC/tree/main/include) : head files.
+  - [lib](https://github.com/GOODMORNING616/EasyDC/tree/main/lib) : source files.
+  - [main.cpp](https://github.com/GOODMORNING616/EasyDC/blob/main/main.cpp)
 
 
 ## Usage:
@@ -48,8 +48,8 @@ used for computing branch number of various operators, checking if a given S-box
     | Options | | | "AS"; "DC" | "1" : T1; "2" : T2; "3" : T3; "4" : T4; "5" : T5; "6" : T6; "7" : T7; "8" : T8 |  
     
      *E.g.*,  `$ ./EasyDC Present 4,15,3,8,13,10,12,0,11,5,7,14,2,6,1,9 AS 1`
-  - set paramters via *[parameters.txt](https://github.com/easydcpro/easydc/blob/main/parameters.txt)* file.
-    *E.g.*, *[parametersSboxDemo.txt](https://github.com/easydcpro/easydc/blob/main/parametersSboxDemo.txt)*  
+  - set paramters via *[parameters.txt](https://github.com/GOODMORNING616/EasyDC/blob/main/parameters.txt)* file.
+    *E.g.*, *[parametersSboxDemo.txt](https://github.com/GOODMORNING616/EasyDC/blob/main/parametersSboxDemo.txt)*  
     
     ```
     $ cat parametersSboxDemo.txt  
@@ -69,8 +69,8 @@ used for computing branch number of various operators, checking if a given S-box
     
     *E.g.*,  `$ ./EasyDC 7 ../benchmarks/BlockCipher/PRESENT.cl b AS 1 allRounds 5`
     
-  - set paramters via *[parameters.txt](https://github.com/easydcpro/easydc/blob/main/parameters.txt)* file.
-    *E.g.*, *[parametersMILPDemo.txt](https://github.com/easydcpro/easydc/blob/main/parametersMILPDemo.txt)*  
+  - set paramters via *[parameters.txt](https://github.com/GOODMORNING616/EasyDC/blob/main/parameters.txt)* file.
+    *E.g.*, *[parametersMILPDemo.txt](https://github.com/GOODMORNING616/EasyDC/blob/main/parametersMILPDemo.txt)*  
     
     ```
     $ cat parametersMILPDemo.txt  
